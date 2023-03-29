@@ -1,15 +1,15 @@
-name: lstm-demo-py3916
+name: lstm-demo-py3912
 channels:
   - defaults
 dependencies:
   - ca-certificates=2023.01.10=hecd8cb5_0
   - certifi=2022.12.7=py39hecd8cb5_0
   - libcxx=14.0.6=h9765a3e_0
-  - libffi=3.4.2=hecd8cb5_6
+  - libffi=3.3=hb1e8313_2
   - ncurses=6.4=hcec6c5f_0
   - openssl=1.1.1t=hca72f7f_0
   - pip=23.0.1=py39hecd8cb5_0
-  - python=3.9.16=h218abb5_2
+  - python=3.9.12=hdfd78df_1
   - readline=8.2=hca72f7f_0
   - setuptools=65.6.3=py39hecd8cb5_0
   - sqlite=3.41.1=h6c40b1e_0
@@ -19,5 +19,9 @@ dependencies:
   - xz=5.2.10=h6c40b1e_1
   - zlib=1.2.13=h4dc903c_0
   - pip:
+    - joblib==1.2.0
+    - numpy==1.24.2
+    - scikit-learn==1.2.2
+    - scipy==1.10.1
     - threadpoolctl==3.1.0
-prefix: /Users/mac/opt/anaconda3/envs/lstm-demo-py3916
+prefix: /Users/mac/opt/anaconda3/envs/lstm-demo-py3912

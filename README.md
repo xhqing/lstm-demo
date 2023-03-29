@@ -1,10 +1,11 @@
 # lstm-demo
 
 ```sh
-conda run -n lstm-demo-py3916
-conda activate lstm-demo-py3916
+conda run -n env_name
+conda activate env_name
 conda deactivate
 conda env export -> environment.yml
 conda env create --file environment.yml
 conda env list
+conda env remove --name env_name
 ```
