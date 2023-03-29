@@ -1,11 +1,6 @@
 # lstm-demo
 
 ```sh
-conda run -n env_name
-conda activate env_name
-conda deactivate
-conda env export -> environment.yml
-conda env create --file environment.yml
-conda env list
-conda env remove --name env_name
+export PYTHON_BUILD_MIRROR_URL=https://mirrors.tuna.tsinghua.edu.cn/python
+pipenv install --python 3.9.12
 ```
