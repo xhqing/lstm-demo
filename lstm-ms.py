@@ -1,7 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 from keras.models import Sequential
 from keras.layers import Dense, LSTM
+
+from sklearn.preprocessing import StandardScaler
+import joblib
+import json
 
 # 生成多元时间序列数据
 def generate_data(sequence_length=10000):
@@ -31,6 +36,14 @@ input_shape = (look_back, 2)
 
 # 生成数据
 seq = generate_data()
+
+scaler = StandardScaler()
+scaler.fit(seq)
+joblib.dump(scaler, f's_scaler.pkl')
+
+scaler = joblib.load(f's_scaler.pkl')
+seq = scaler.transform(seq)
+
 X, y = create_dataset(seq, look_back, look_forward)
 
 # 构建模型
